@@ -1,0 +1,100 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": false,
+        "transpileTemplateLiterals": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@dummydata": "./__dummydata__/",
+          "@mocks": "./__mocks__/",
+
+          "@Entry": "./src/Entry/",
+          "@Helpers": "./src/Helpers/",
+
+          // "@CommanderPages": "./src/Pages/Commander/",
+          // "@GlobalPages": "./src/Pages/Global/",
+          // "@UserPages": "./src/Pages/User/",
+
+          "styled-components": "./node_modules/styled-components",
+          "react": "./node_modules/react",
+          "@storybook/react": "./node_modules/@storybook/react",
+          "@storybook/addon-actions": "./node_modules/@storybook/addon-actions"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}
+
+// [
+//   "import",
+//   {
+//     "libraryName": "@material-ui/core",
+//     "libraryDirectory": "",
+//     "camel2DashComponentName": false
+//   },
+//   "tree-shaking-mui-core"
+// ],
+// [
+//   "import",
+//   {
+//     "libraryName": "@material-ui/core/styles",
+//     "libraryDirectory": "",
+//     "camel2DashComponentName": false
+//   },
+//   "tree-shaking-mui-styles"
+// ],
+// [
+//   "import",
+//   {
+//     "libraryName": "@material-ui/core/colors",
+//     "libraryDirectory": "",
+//     "camel2DashComponentName": false
+//   },
+//   "tree-shaking-mui-colors"
+// ],
+// [
+//   "import",
+//   {
+//     "libraryName": "@material-ui/icons",
+//     "libraryDirectory": "",
+//     "camel2DashComponentName": false
+//   },
+//   "tree-shaking-mui-icons"
+// ]
+// {
+//   "plugins": [
+//     "@babel/plugin-syntax-dynamic-import",
+//     [
+//       "@babel/plugin-proposal-private-methods",
+//       // {
+//       //   "loose": true
+//       // }
+//     ],
+//     // [
+//     //   "@babel/plugin-proposal-decorators",
+//     //   {
+//     //     "legacy": true
+//     //   }
+//     // ],
+//     [
+//       "@babel/plugin-proposal-class-properties",
+//       // {
+//       //   "loose": true
+//       // }
+//     ],
+//     "@babel/plugin-proposal-object-rest-spread"
+//   ]
+// }

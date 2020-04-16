@@ -1,0 +1,23 @@
+{
+  "typeAcquisition": {
+    "include": ["jest"]
+  },
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "commonJS",
+    "paths": {
+      "@dummydata*": ["__dummydata__/*"],
+      "@mocks*": ["__mocks__/*"],
+
+      "@Entry*": ["src/Entry/"],
+      "@Helpers*": ["src/Helpers/"],
+
+      // "@CommanderPages*": ["src/Pages/Commander/"],
+      // "@GlobalPages*": ["src/Pages/Global/"],
+      // "@UserPages*": ["src/Pages/User/"],
+      "styled-components*": ["node_modules/styled-components/"],
+      "react*": ["node_modules/react/"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
