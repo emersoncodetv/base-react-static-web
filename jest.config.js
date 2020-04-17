@@ -12,10 +12,9 @@ module.exports = {
     "^@Entry(.*)$": "<rootDir>/src/Entry$1",
     "^@Helpers(.*)$": "<rootDir>/src/Helpers$1",
 
-    // "^@CommanderPages(.*)$": "<rootDir>/src/Pages/Commander$1",
+    "^@Cross(.*)$": "<rootDir>/src/Cross$1",
     // "^@GlobalPages(.*)$": "<rootDir>/src/Pages/Global$1",
-    // "^@UserPages(.*)$": "<rootDir>/src/Pages/User$1",
     "^styled-components(.*)$": "<rootDir>/node_modules/styled-components$1",
-    "^react(.*)$": "<rootDir>/node_modules/react$1"
-  }
+    "^react(.*)$": "<rootDir>/node_modules/react$1",
+  },
 };

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "curriculum:build": "webpack",
-    "curriculum:debug": "webpack-dev-server",
+    "curriculum:debug": "webpack-dev-server --config webpack.pro.config.js",
     "curriculum:unittest": "jest --testPathIgnorePatterns=src",
     "curriculum:tdd": "jest --testPathIgnorePatterns=__tests__",
     "curriculum:storybook": "start-storybook -p 61111"
@@ -14,8 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@scofrontend/auth": "file:../../SERENDIPIA.CO/sco-frontend-auth",
-    "@scofrontend/design": "file:../../SERENDIPIA.CO/sco-frontend-design",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

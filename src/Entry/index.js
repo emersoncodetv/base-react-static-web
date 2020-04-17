@@ -1,12 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
 
-// import App from "./App2";
+import App from "./App";
 
-const Demo = () => {
-  return <div>
-    Hola Mundo
-  </div>
-}
-
-render(<Demo />, document.getElementById("app"));
+render(<App />, document.getElementById("app"));

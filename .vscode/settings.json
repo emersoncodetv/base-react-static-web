@@ -20,6 +20,17 @@
       "extensions": ["mock.js"],
       "format": "svg",
       "overrides": "coffeescript"
+    },
+    {
+      "icon": "webpack",
+      "filename": true,
+      "extensions": [
+        "webpack.pro.config.js",
+        "webpack.debug.config.js",
+        "webpack.base.config.js"
+      ],
+      "format": "svg",
+      "overrides": "webpack"
     }
   ],
   "vsicons.associations.folders": [
@@ -27,5 +38,12 @@
       "icon": "test",
       "extensions": ["@data-simulated"]
     }
-  ]
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  // Set the default
+  "editor.formatOnSave": false
 }

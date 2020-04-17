@@ -19,9 +19,8 @@
           "@Entry": "./src/Entry/",
           "@Helpers": "./src/Helpers/",
 
-          // "@CommanderPages": "./src/Pages/Commander/",
+          "@Cross": "./src/Cross/",
           // "@GlobalPages": "./src/Pages/Global/",
-          // "@UserPages": "./src/Pages/User/",
 
           "styled-components": "./node_modules/styled-components",
           "react": "./node_modules/react",
