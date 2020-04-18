@@ -27,7 +27,8 @@
       "extensions": [
         "webpack.pro.config.js",
         "webpack.debug.config.js",
-        "webpack.base.config.js"
+        "webpack.base.config.js",
+        "webpack.config.js"
       ],
       "format": "svg",
       "overrides": "webpack"
